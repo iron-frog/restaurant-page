@@ -23,6 +23,14 @@ function headerBanner() {
   const contactTabLink = document.createElement("button");
   contactTabLink.textContent = "Contact";
 
+  homeTabLink.classList.add("homePage");
+  menuTabLink.classList.add("menuPage");
+  contactTabLink.classList.add("contactPage");
+
+  homeTabLink.classList.add("tab");
+  menuTabLink.classList.add("tab");
+  contactTabLink.classList.add("tab");
+
   contactTab.appendChild(contactTabLink);
   navLinks.appendChild(homeTab);
   navLinks.appendChild(menuTab);
