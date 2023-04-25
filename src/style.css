@@ -1,0 +1,57 @@
+body,
+ul,
+h1,
+button {
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+body {
+  height: 100vh;
+  background: url("./chef.jpg");
+}
+
+.logoName {
+  text-align: center;
+  margin: auto auto;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: end;
+  width: 50%;
+}
+
+ul > li {
+  font-weight: bold;
+}
+
+body > div {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.header {
+  display: flex;
+  padding: 10px;
+  padding-bottom: 0;
+  justify-content: space-between;
+  background-color: #80808080;
+}
+
+.header button {
+  padding: 1rem 1.5rem;
+  background: none;
+  font-size: 1rem;
+}
+
+.header button:hover {
+  background-color: #80808040;
+  cursor: pointer;
+}
+
+.container {
+}
