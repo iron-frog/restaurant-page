@@ -26,7 +26,6 @@ function headerBanner() {
   navLinks.appendChild(contactTab);
   header.appendChild(logoName);
   header.appendChild(navLinks);
-  console.log(header);
   return header;
 }
 
