@@ -10,8 +10,6 @@ const pages = {
   menuPage: menu(),
 };
 const header = headerBanner();
-// const homePage = home();
-// const menuPage = menu();
 content.appendChild(header);
 content.appendChild(pages.homePage);
 
@@ -27,16 +25,6 @@ function hello(e) {
       break;
     }
   }
-  //   if (btnTxt.includes(homePage.classList.value)) {
-  //     removePage();
-  //     console.log("match");
-  //     content.
-  //   }
-
-  //   console.log(e.target);
-  //   console.log(homePage);
-  //   content.removeChild(homePage);
-  //   content.appendChild(menu());
 }
 
 function removePage() {

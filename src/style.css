@@ -14,11 +14,8 @@ body {
 
 #content {
   height: 100%;
-}
-
-.logoName {
-  text-align: center;
-  margin: auto auto;
+  display: flex;
+  flex-direction: column;
 }
 
 ul {
@@ -33,12 +30,6 @@ ul > li {
   font-weight: bold;
 }
 
-body > div {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-}
-
 .header {
   display: flex;
   padding: 10px;
@@ -47,10 +38,32 @@ body > div {
   background-color: #80808080;
 }
 
+.logoGroup {
+  display: flex;
+  gap: 10px;
+  margin: 0 auto;
+}
+
+.logoName {
+  text-align: center;
+  align-self: center;
+  color: white;
+  border-bottom: 1px solid white;
+  padding: 0 0.5rem;
+}
+
+.header img {
+  content: url("./eat.svg");
+  aspect-ratio: 1;
+  width: 50px;
+}
+
 .header button {
   padding: 1rem 1.5rem;
   background: none;
   font-size: 1rem;
+  color: white;
+  font-weight: bold;
 }
 
 .header button:hover {
@@ -59,23 +72,54 @@ body > div {
 }
 
 .homeContainer {
-  height: 100%;
+  display: flex;
+  flex: 1;
+  align-items: center;
+  padding-left: 20px;
 }
 .hero {
   display: flex;
-  height: 50%;
-  justify-content: center;
-  align-items: flex-start;
+  justify-content: end;
+  /* align-items: flex-start; */
   flex-direction: column;
-  padding: 50px;
+  padding: 10px;
+  gap: 50px;
+  position: relative;
+}
+
+.hero img {
+  content: url("./eat.svg");
+  position: absolute;
+  aspect-ratio: 1;
+  border: 2px solid black;
+  padding: 5px;
+  border-radius: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 0;
 }
 
 .hero h2 {
   font-size: 3rem;
   color: white;
+  margin: 0 auto;
+  filter: drop-shadow(0 0 1rem black);
+  text-align: center;
+  z-index: 1;
+}
+
+.hero h2 > span {
+  color: pink;
 }
 
 .hero p {
-  max-width: 75ch;
+  max-width: 70ch;
   color: white;
+  font-size: 1.25rem;
+  line-height: 2;
+  margin: 0 auto;
+  text-align: center;
+  white-space: pre-line;
+  filter: drop-shadow(0 0 0.1rem black);
+  z-index: 1;
 }

@@ -2,9 +2,11 @@ function headerBanner() {
   const header = document.createElement("section");
   header.classList.add("header");
 
+  const logoGroup = document.createElement("div");
+  logoGroup.classList.add("logoGroup");
   const logoName = document.createElement("h1");
   logoName.classList.add("logoName");
-  logoName.textContent = "The Best Restaurant";
+  logoName.textContent = "The Best";
   const logoImg = document.createElement("img");
 
   const navLinks = document.createElement("ul");
@@ -20,11 +22,14 @@ function headerBanner() {
   const contactTab = document.createElement("li");
   const contactTabLink = document.createElement("button");
   contactTabLink.textContent = "Contact";
+
   contactTab.appendChild(contactTabLink);
   navLinks.appendChild(homeTab);
   navLinks.appendChild(menuTab);
   navLinks.appendChild(contactTab);
-  header.appendChild(logoName);
+  logoGroup.appendChild(logoImg);
+  logoGroup.appendChild(logoName);
+  header.appendChild(logoGroup);
   header.appendChild(navLinks);
   return header;
 }
