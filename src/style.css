@@ -108,7 +108,8 @@ ul > li {
 
 .hero,
 .contact,
-.hours {
+.hours,
+.menu {
   display: flex;
   justify-content: end;
   flex-direction: column;
@@ -131,7 +132,8 @@ ul > li {
 
 .hero h2,
 .contact h2,
-.hours h2 {
+.hours h2,
+.menu h2 {
   font-size: 3rem;
   color: white;
   margin: 0 auto;
@@ -183,7 +185,52 @@ section.contactPage {
   flex-direction: column;
 }
 
+section.menuPage {
+  margin-top: 100px;
+  padding-left: 100px;
+  position: relative;
+}
+
+.menuItem {
+  display: flex;
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 70%;
+  flex-wrap: wrap;
+}
+
+.menuItem > div {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.menuItem > div > p {
+  font-size: 1.2rem;
+  filter: drop-shadow(0 0 1rem black);
+}
+.menuImg {
+  content: url("./vintage.jpg");
+  /* aspect-ratio: 1; */
+  height: 670px;
+  border: 5px solid white;
+  box-sizing: border-box;
+}
+
+.menu h2 {
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
 @media (max-width: 700px) {
+  section.menuPage {
+    justify-content: center;
+    padding: 0;
+  }
   section.contactPage {
     justify-content: center;
     margin-top: 100px;

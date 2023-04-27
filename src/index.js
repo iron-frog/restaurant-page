@@ -69,7 +69,7 @@ function initPage() {
   document.body.appendChild(header);
   const btn = document.body.querySelector(".homePage");
   content.appendChild(pages.homePage);
-  // content.appendChild(pages.contactPage);
+  // content.appendChild(pages.menuPage);
   btn.classList.add("active");
 }
 
