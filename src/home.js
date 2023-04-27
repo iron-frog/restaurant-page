@@ -1,6 +1,6 @@
 function home() {
   const section = document.createElement("section");
-  section.classList.add("homeContainer");
+  section.classList.add("homePage");
 
   const hero = document.createElement("div");
   hero.classList.add("hero");
@@ -17,7 +17,6 @@ function home() {
   hero.appendChild(description);
   hero.appendChild(logo);
   section.appendChild(hero);
-
   return section;
 }
 

@@ -1,6 +1,6 @@
 function menu() {
   const section = document.createElement("section");
-  section.classList.add("container");
+  section.classList.add("menuPage");
 
   const h2 = document.createElement("h2");
   h2.textContent = "Byyyyyyyeeeeeeee";
